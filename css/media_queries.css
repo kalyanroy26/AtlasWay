@@ -1,0 +1,60 @@
+/* Extra Small (XS) */
+@media (max-width: 480px) {
+    /* Your CSS here */
+}
+
+/* Small (SM) */
+@media (min-width: 481px) and (max-width: 768px) {
+    /* Your CSS here */
+}
+
+/* Medium (MD) */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    html{
+        font-size: 12px;
+    }
+
+    .preloader img{
+        height: 200px;
+    }
+
+    .field-container{
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .field{
+        width: 33%;
+    }
+
+    .hero{
+        background-position: center;
+    }
+
+    .hero p{
+        text-wrap: wrap;
+    }
+
+    .features{
+        min-height: 30vh;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .feature__card{
+        width: 45%;
+    }
+
+
+
+    
+
+
+
+}
+
+/* Large (LG) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    /* Your CSS here */
+}
