@@ -319,7 +319,7 @@ hr {
   display: flex;
   justify-content: space-between;
   border-top: 1px solid var(--border-color);
-  padding: 2rem 0;
+  padding: 2rem 0 1rem 0;
 }
 
 .terms,.social__links{
