@@ -1,6 +1,6 @@
 /* hero section styling */
 .hero {
-  background-image: url("/assets/places/van.jpg");
+  background-image: url("./assets/places/van.jpg");
   background-size: cover;
   border-radius: 10px;
   box-shadow: var(--image-shadow);
