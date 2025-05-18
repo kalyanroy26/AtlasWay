@@ -276,6 +276,11 @@ hr {
   font-size: 1.2rem;
 }
 
+.f__logo{
+  display: flex;
+  gap: 1rem;
+}
+
 .subscribe__btn{
   width: 8rem;
   padding: 10px;
@@ -290,11 +295,16 @@ hr {
 
 .f-menu ul {
   list-style-type: none;
+  padding-left: 1rem;
 }
 
 .f-menu>ul>li{
   margin-bottom: 1rem;
   cursor: pointer;
+  transition: all .3s ease-in-out;
+  &:hover{
+    color: var(--primary-color);
+  }
 }
 
 .footer__menu1 {

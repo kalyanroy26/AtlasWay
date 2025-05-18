@@ -24,11 +24,13 @@
 
   <body>
     <!-- <div class="preloader">
-      <img src="../assets/icons/loader.gif" alt="loader" />
+      <img src="../assets/icons/loader.gif" alt="loader" loading="lazy" />
       <h3>Loading...</h3>
     </div> -->
 
     <div class="container">
+      <!-- ===================== Navbar Section ===================== -->
+
       <nav class="navbar">
         <div class="logo">
           <img
@@ -36,6 +38,7 @@
             class="logo__icon"
             alt="AtlasWay"
             height="50"
+            loading="lazy"
           />
           <a href="#"><span class="logo__text">AtlasWay</span></a>
         </div>
@@ -47,6 +50,8 @@
         </div>
       </nav>
 
+      <!-- ===================== Tagline Section ===================== -->
+
       <div class="tagline">
         <span>Find</span>
         <span>your</span>
@@ -55,29 +60,31 @@
         <span>AtlasWay</span>
       </div>
 
-      <div class="search-box">
+    <!-- ===================== Search Menu Section ===================== -->
+
+      <section class="search-box">
         <div class="search__menu">
           <a
             href="./flight_search.html"
             target="search__type"
             class="menu__item"
           >
-            <img src="../assets/icons/flight.png" alt="flight" />
+            <img src="../assets/icons/flight.png" loading="lazy" alt="flight" />
             <span>Flights</span>
           </a>
 
           <a href="./search.html" target="search__type" class="menu__item">
-            <img src="../assets/icons/stay.png" alt="stay" />
+            <img src="../assets/icons/stay.png" loading="lazy" alt="stay" />
             <span>Stay</span>
           </a>
 
           <a href="#places" class="menu__item">
-            <img src="../assets/icons/activities.png" alt="activities" />
+            <img src="../assets/icons/activities.png" loading="lazy" alt="activities" />
             <span>Activities</span>
           </a>
 
           <a href="#stay" class="menu__item">
-            <img src="../assets/icons/packages.png" alt="packages" />
+            <img src="../assets/icons/packages.png" loading="lazy" alt="packages" />
             <span>Packages</span>
           </a>
         </div>
@@ -87,22 +94,25 @@
             frameborder="0"
             name="search__type"
             class="frame"
+            loading="lazy"
           ></iframe>
         </div>
-      </div>
+      </section>
 
-      <div class="hero section">
+    <!-- ===================== Hero Section ===================== -->
+      <section class="hero section">
         <p>
           Explore More for Less with <br />
           <span>AtlasWay's</span> Exclusive Offers
         </p>
-      </div>
+      </section>
+
+    <!-- ===================== Feature Section ===================== -->
 
       <h1>Travel Made Easy with Our Top Features</h1>
-
-      <div class="features">
+      <section class="features">
         <div class="feature__card">
-          <img src="../assets/illustrations/flexible.png" alt="flexible" />
+          <img src="../assets/illustrations/flexible.png" loading="lazy" alt="flexible" />
           <div class="feature__details">
             <h2>Flexible Booking</h2>
             <p>Change your plans without the hassle.</p>
@@ -110,7 +120,7 @@
         </div>
 
         <div class="feature__card">
-          <img src="../assets/illustrations/offers.png" alt="offers" />
+          <img src="../assets/illustrations/offers.png" loading="lazy" alt="offers" />
           <div class="feature__details">
             <h2>Best Deals</h2>
             <p>Unbeatable prices on hotels, and flights.</p>
@@ -118,7 +128,7 @@
         </div>
 
         <div class="feature__card">
-          <img src="../assets/illustrations/payment.png" alt="payment" />
+          <img src="../assets/illustrations/payment.png" loading="lazy" alt="payment" />
           <div class="feature__details">
             <h2>Secure Payments</h2>
             <p>Your payments are safe and protected.</p>
@@ -126,45 +136,55 @@
         </div>
 
         <div class="feature__card">
-          <img src="../assets/illustrations/service.png" alt="service" />
+          <img src="../assets/illustrations/service.png" loading="lazy" alt="service" />
           <div class="feature__details">
             <h2>24/7 Support</h2>
             <p>Travel with peace of mind, we are always here for you.</p>
           </div>
         </div>
-      </div>
+      </section>
 
-      <!-- types of stay -->
+      <!-- ===================== Stay Section ===================== -->
       <h1 id="stay">Discover Your Perfect Stay</h1>
-      <div class="stay-section">
-        <iframe src="./pages/stay.html" frameborder="0" class="frame"></iframe>
-      </div>
+      <section class="stay-section">
+        <iframe src="./pages/stay.html" frameborder="0" loading="lazy" class="frame"></iframe>
+      </section>
 
+      <!-- ===================== Places Section ===================== -->
       <h1 id="places">Uncover the World's Best Destinations</h1>
-      <div class="places-section">
+      <section class="places-section">
         <iframe
           src="./pages/destinations.html"
           frameborder="0"
           class="frame"
+          loading="lazy"
         ></iframe>
-      </div>
+      </section>
 
+      <!-- ===================== Testimonials Section ===================== -->
       <h1>Trusted by Travelers Worldwide</h1>
-      <div class="testimonial-section">
-        <iframe src="./pages/testimonial.html" frameborder="0" class="frame"></iframe>
-      </div>
+      <section class="testimonial-section">
+        <iframe
+          src="./pages/testimonial.html"
+          frameborder="0"
+          class="frame"
+          loading="lazy"
+        ></iframe>
+      </section>
 
-      <div class="footer-section">
+      <!-- ===================== Footer Section ===================== -->
+      <footer class="footer-section">
         <!-- Top Section -->
         <div class="footer__top">
           <!-- Logo Section -->
           <div class="logo footer__logo">
-            <div>
+            <div class="f__logo">
               <img
                 src="../assets/icons/favicon.gif"
                 class="logo__icon"
                 alt="AtlasWay"
                 height="50"
+                loading="lazy"
               />
               <a href="#"><span class="logo__text">AtlasWay</span></a>
             </div>
@@ -208,22 +228,22 @@
           </div>
           <div class="terms">
             <span>Terms & Conditions</span>
-            <span><pre style="display: inline-block">   </pre></span>
+            <span><pre style="display: inline-block"></pre></span>
             <span>Privacy Policy</span>
           </div>
           <div class="social__links">
-            <span><img src="../assets/icons/x.png" alt="x" /></span>
-            <span><img src="../assets/icons/insta.png" alt="insta" /></span>
+            <span><img src="../assets/icons/x.png" loading="lazy" alt="x" /></span>
+            <span><img src="../assets/icons/insta.png" loading="lazy" alt="insta" /></span>
             <span
-              ><img src="../assets/icons/facebook.png" alt="facebook"
+              ><img src="../assets/icons/facebook.png" loading="lazy" alt="facebook"
             /></span>
-            <span><img src="../assets/icons/youtube.png" alt="youtube" /></span>
+            <span><img src="../assets/icons/youtube.png" loading="lazy" alt="youtube" /></span>
             <span
-              ><img src="../assets/icons/pinterest.png" alt="pinterest"
+              ><img src="../assets/icons/pinterest.png" loading="lazy" alt="pinterest"
             /></span>
           </div>
         </div>
-      </div>
+      </footer>
     </div>
   </body>
 </html>
