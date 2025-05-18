@@ -63,8 +63,31 @@ a{
     color: var(--text-color);
     row-gap: 3rem;
     background-color: var(--bg-color);
-    /* opacity: 0;
-    animation: fadein 0.2s ease-out 2.5s forwards; */
+    opacity: 0;
+    animation: fadein 0.2s ease-out 2.5s forwards;
+}
+
+.scroll__top{
+    height: 4rem;
+    width: 4rem;
+    background-color: var(--primary-color);
+    display: grid;
+    place-content: center;
+    border-radius: 12px;
+    cursor: pointer;
+    position:fixed;
+    right: 2rem;
+    bottom: 5.5rem;
+    z-index: 999;
+    transition: transform .3s ease-in-out;
+}
+
+.scroll__top:hover{
+    transform: scale(0.95);
+}
+
+.scroll__top img{
+    height: 36px;
 }
 
 .navbar{
