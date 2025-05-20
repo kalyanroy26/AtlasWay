@@ -42,15 +42,6 @@
     transform: translateX(0%);
   }
   100% {
-    transform: translateX(-137%);
-  }
-}
-
-@keyframes slide2 {
-  0% {
-    transform: translateX(2%);
-  }
-  100% {
-    transform: translateX(-392%);
+    transform: translateX(-50%);
   }
 }

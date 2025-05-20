@@ -27,18 +27,21 @@
 
 /* Features card styling */
 
-.features {
+.feature-section {
   min-height: 60vh;
   width: 85%;
+  flex-wrap: wrap;
+  gap: 1rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   margin-bottom: 2rem;
   text-align: center;
 }
 
 .feature__card {
-  width: 24%;
+  flex: 1 1 min(280px, 100%);
+  max-width: 300px;
   border-radius: 12px;
   display: flex;
   flex-direction: column;
@@ -62,27 +65,24 @@
 /* stay types styling */
 
 .stay-section {
-  height: 80vh;
+  min-height: 80vh;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   width: 85%;
   overflow: auto;
-}
-
-.stay__container {
   overflow: hidden;
-  width: 100%;
 }
 
 .card__slide {
   display: flex;
   gap: 2rem;
-  animation: slide 20s ease-out 1s infinite;
+  animation: slide 50s linear infinite;
 }
 
 .stay__card {
   position: relative;
+  cursor: pointer;
 }
 
 .stay__card img {
@@ -99,29 +99,101 @@
   font-weight: 600;
 }
 
+/* popular flights section */
+
+.flights-section {
+  min-height: 70vh;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 85%;
+  margin: auto;
+}
+
+.flight__card {
+  width: 280px;
+  height: 30vh;
+  border-radius: 12px;
+  display: grid;
+  font-size: 1rem;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 2fr 1fr 2fr 1fr;
+  place-items: center;
+  align-items: center;
+  padding: 0.5rem 0;
+  box-shadow: var(--card-shadow);
+  grid-template-areas:
+    "top top top"
+    "data1 data1 data1"
+    "line line line "
+    "data2 data2 data2"
+    ". .  price";
+  transition: all 0.3s ease-in-out;
+}
+
+.flight__card:hover {
+  transform: scale(1.02);
+}
+
+.f-card-top {
+  grid-area: top;
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+}
+
+.f-card-top img {
+  height: 24px;
+}
+
+.eco {
+  color: #1fab69;
+  font-weight: 500;
+}
+
+.f-card-data1 {
+  grid-area: data1;
+}
+
+.f-card-line {
+  grid-area: line;
+  border-top: 0.5px solid #000;
+  width: 85%;
+}
+
+.f-card-data2 {
+  grid-area: data2;
+}
+
+.f-price {
+  grid-area: price;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #393e46;
+}
+
 /* places section style */
 
 .places-section {
-  height: 80vh;
+  min-height: 80vh;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   width: 85%;
-}
-
-.places__container {
   overflow: hidden;
-  width: 100%;
 }
 
 .places__slide {
   display: flex;
   gap: 2rem;
-  animation: slide2 30s ease-out 1s reverse infinite;
+  animation: slide 60s linear reverse infinite;
 }
 
 .places__card {
   position: relative;
+  cursor: pointer;
 }
 
 .places__card img {
@@ -142,28 +214,23 @@
 
 .testimonial-section {
   display: flex;
-  height: 45vh;
+  flex-wrap: wrap;
+  min-height: 40vh;
   align-items: center;
+  justify-content: center;
+  gap: 1rem;
   width: 85%;
   margin-bottom: 2rem;
 }
 
-.testimonial__container {
-  width: 100%;
-}
-
-.testimonial__slide {
-  display: flex;
-  height: 95vh;
-}
-
 .testimonial__card {
-  height: 95%;
-  width: 25%;
+  height: 40vh;
+  width: 24%;
+  max-width: 300px;
   border-radius: 12px;
   box-shadow: var(--card-shadow);
   display: grid;
-  margin: 0.5rem;
+  /* margin: 0.5rem; */
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1.2fr 10fr 1fr 1fr;
   align-items: center;
@@ -272,21 +339,21 @@ hr {
   gap: 2rem;
 }
 
-.footer__logo p{
+.footer__logo p {
   font-size: 1.2rem;
 }
 
-.f__logo{
+.f__logo {
   display: flex;
   gap: 1rem;
 }
 
-.subscribe__btn{
+.subscribe__btn {
   width: 8rem;
   padding: 10px;
 }
 
-.f-menu{
+.f-menu {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -298,11 +365,11 @@ hr {
   padding-left: 1rem;
 }
 
-.f-menu>ul>li{
+.f-menu > ul > li {
   margin-bottom: 1rem;
   cursor: pointer;
-  transition: all .3s ease-in-out;
-  &:hover{
+  transition: all 0.3s ease-in-out;
+  &:hover {
     color: var(--primary-color);
   }
 }
@@ -322,15 +389,15 @@ hr {
   padding: 2rem 0 1rem 0;
 }
 
-.terms,.social__links{
+.terms,
+.social__links {
   cursor: pointer;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
-.social__links>span>img:hover{
-  transform: scale(.95);
+.social__links > span > img:hover {
+  transform: scale(0.95);
 }
-
 
 .social__links img {
   height: 32px;

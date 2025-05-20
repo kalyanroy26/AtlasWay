@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./assets/icons/favicon.gif" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="./assets/icons/favicon.gif"
+      type="image/x-icon"
+    />
     <title>AtlasWay</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,14 +23,16 @@
   </head>
 
   <body>
-     <div class="preloader">
+    <!-- <div class="preloader">
       <img src="./assets/icons/loader.gif" alt="loader" />
       <h3>Loading...</h3>
-    </div>
+    </div> -->
 
     <div class="container">
       <!-- ===================== Navbar Section ===================== -->
-      <a href="#top" class="scroll__top"><img src="./assets/icons/top.png" alt="scroll__top"></a>
+      <a href="#top" class="scroll__top"
+        ><img src="./assets/icons/top.png" alt="scroll__top"
+      /></a>
       <nav class="navbar" id="top">
         <div class="logo">
           <img
@@ -40,10 +46,27 @@
         </div>
         <div class="nav__list">
           <span class="nav__link"><a href="#stay">Find Your Stay</a></span>
+          <span class="nav__link"><a href="#flights">Discover Flights</a></span>
           <span class="nav__link"><a href="#places">Trips</a></span>
           <span class="nav__link"><a href="#">Help</a></span>
-          <span class="nav__link button"><a href="./pages/login.html">Sign in</a></span>
+          <span class="nav__link button"
+            ><a href="./pages/login.html">Sign in</a></span
+          >
         </div>
+
+        <div class="burger-menu">
+          <input type="checkbox" id="menu">
+          <label for="menu"><img class="menu__icon" src="./assets/icons/menu.png" alt="menu"></label>
+          <div class="nav__list__sm">
+          <label for="menu"><img src="./assets/icons/exit.png" class="exit__icon" alt="exit"></label>
+          <span class="nav__link"><a href="#stay">Find Your Stay</a></span>
+          <span class="nav__link"><a href="#flights">Discover Flights</a></span>
+          <span class="nav__link"><a href="#places">Trips</a></span>
+          <span class="nav__link"><a href="#">Help</a></span>
+          <span class="nav__link button" id="sm__btn"><a href="./pages/login.html">Sign in</a></span>
+        </div>
+        </div>
+
       </nav>
 
       <!-- ===================== Tagline Section ===================== -->
@@ -58,20 +81,36 @@
       <!-- ===================== Search Menu Section ===================== -->
       <section class="search-box">
         <div class="search__menu">
-          <a href="./pages/flight_search.html" target="search__type" class="menu__item">
+          <a
+            href="./pages/flight_search.html"
+            target="search__type"
+            class="menu__item"
+          >
             <img src="./assets/icons/flight.png" loading="lazy" alt="flight" />
             <span>Flights</span>
           </a>
-          <a href="./pages/search.html" target="search__type" class="menu__item">
+          <a
+            href="./pages/search.html"
+            target="search__type"
+            class="menu__item"
+          >
             <img src="./assets/icons/stay.png" loading="lazy" alt="stay" />
             <span>Stay</span>
           </a>
           <a href="#places" class="menu__item">
-            <img src="./assets/icons/activities.png" loading="lazy" alt="activities" />
+            <img
+              src="./assets/icons/activities.png"
+              loading="lazy"
+              alt="activities"
+            />
             <span>Activities</span>
           </a>
           <a href="#stay" class="menu__item">
-            <img src="./assets/icons/packages.png" loading="lazy" alt="packages" />
+            <img
+              src="./assets/icons/packages.png"
+              loading="lazy"
+              alt="packages"
+            />
             <span>Packages</span>
           </a>
         </div>
@@ -87,7 +126,7 @@
       </section>
 
       <!-- ===================== Hero Section ===================== -->
-      <section class="hero section">
+      <section class="hero hero-section">
         <p>
           Explore More for Less with <br />
           <span>AtlasWay's</span> Exclusive Offers
@@ -96,9 +135,13 @@
 
       <!-- ===================== Feature Section ===================== -->
       <h1>Travel Made Easy with Our Top Features</h1>
-      <section class="features">
+      <section class="feature-section">
         <div class="feature__card">
-          <img src="./assets/illustrations/flexible.png" loading="lazy" alt="flexible" />
+          <img
+            src="./assets/illustrations/flexible.png"
+            loading="lazy"
+            alt="flexible"
+          />
           <div class="feature__details">
             <h2>Flexible Booking</h2>
             <p>Change your plans without the hassle.</p>
@@ -106,7 +149,11 @@
         </div>
 
         <div class="feature__card">
-          <img src="./assets/illustrations/offers.png" loading="lazy" alt="offers" />
+          <img
+            src="./assets/illustrations/offers.png"
+            loading="lazy"
+            alt="offers"
+          />
           <div class="feature__details">
             <h2>Best Deals</h2>
             <p>Unbeatable prices on hotels, and flights.</p>
@@ -114,7 +161,11 @@
         </div>
 
         <div class="feature__card">
-          <img src="./assets/illustrations/payment.png" loading="lazy" alt="payment" />
+          <img
+            src="./assets/illustrations/payment.png"
+            loading="lazy"
+            alt="payment"
+          />
           <div class="feature__details">
             <h2>Secure Payments</h2>
             <p>Your payments are safe and protected.</p>
@@ -122,7 +173,11 @@
         </div>
 
         <div class="feature__card">
-          <img src="./assets/illustrations/service.png" loading="lazy" alt="service" />
+          <img
+            src="./assets/illustrations/service.png"
+            loading="lazy"
+            alt="service"
+          />
           <div class="feature__details">
             <h2>24/7 Support</h2>
             <p>Travel with peace of mind, we are always here for you.</p>
@@ -133,19 +188,391 @@
       <!-- ===================== Stay Section ===================== -->
       <h1 id="stay">Discover Your Perfect Stay</h1>
       <section class="stay-section">
-        <iframe src="./pages/stay.html" frameborder="0" loading="lazy" class="frame"></iframe>
+        <div class="card__slide">
+          <div class="stay__card">
+            <img src="../assets/stay/resort.jpg" alt="resort" />
+            <span class="stay__details">Resort</span>
+          </div>
+
+          <div class="stay__card">
+            <img src="../assets/stay/hut.jpg" alt="Cabin" />
+            <span class="stay__details">Cabin</span>
+          </div>
+
+          <div class="stay__card">
+            <img src="../assets/stay/chalet.jpg" alt="chalet" />
+            <span class="stay__details">Chalet</span>
+          </div>
+
+          <div class="stay__card">
+            <img src="../assets/stay/hotel.jpg" alt="Hotel" />
+            <span class="stay__details">Hotel</span>
+          </div>
+
+          <div class="stay__card">
+            <img src="../assets/stay/villa.jpg" alt="villa" />
+            <span class="stay__details">Villa</span>
+          </div>
+
+          <div class="stay__card">
+            <img src="../assets/stay/beach.jpg" alt="beach" />
+            <span class="stay__details">Beach house</span>
+          </div>
+
+          <div class="stay__card">
+            <img src="../assets/stay/apartment.jpg" alt="Appartment" />
+            <span class="stay__details">Appartment</span>
+          </div>
+
+          <div class="stay__card">
+            <img src="../assets/stay/tent.jpg" alt="tent" />
+            <span class="stay__details">Tent</span>
+          </div>
+
+          <!-- duplicate stay cards -->
+
+          <div class="stay__card">
+            <img src="../assets/stay/resort.jpg" alt="resort" />
+            <span class="stay__details">Resort</span>
+          </div>
+
+          <div class="stay__card">
+            <img src="../assets/stay/hut.jpg" alt="Cabin" />
+            <span class="stay__details">Cabin</span>
+          </div>
+
+          <div class="stay__card">
+            <img src="../assets/stay/chalet.jpg" alt="chalet" />
+            <span class="stay__details">Chalet</span>
+          </div>
+
+          <div class="stay__card">
+            <img src="../assets/stay/hotel.jpg" alt="Hotel" />
+            <span class="stay__details">Hotel</span>
+          </div>
+
+          <div class="stay__card">
+            <img src="../assets/stay/villa.jpg" alt="villa" />
+            <span class="stay__details">Villa</span>
+          </div>
+
+          <div class="stay__card">
+            <img src="../assets/stay/beach.jpg" alt="beach" />
+            <span class="stay__details">Beach house</span>
+          </div>
+
+          <div class="stay__card">
+            <img src="../assets/stay/apartment.jpg" alt="Appartment" />
+            <span class="stay__details">Appartment</span>
+          </div>
+
+          <div class="stay__card">
+            <img src="../assets/stay/tent.jpg" alt="tent" />
+            <span class="stay__details">Tent</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== Flights Section ===================== -->
+      <h1 id="flights">Discover Flights for Popular Destinations</h1>
+      <section class="flights-section">
+        <div class="flight__card">
+          <div class="f-card-top">
+            <span><img src="./assets/icons/ticket.png" alt="ticket" /></span>
+            <span class="eco">Economy</span>
+          </div>
+          <div class="f-card-data1">
+            <span>New York (JFK) - London (LHR)</span>
+          </div>
+          <div class="f-card-line"></div>
+          <div class="f-card-data2">
+            <span>London (LHR) - New York (JFK)</span>
+          </div>
+          <div class="f-price">
+            <span>$550</span>
+          </div>
+        </div>
+
+        <div class="flight__card">
+          <div class="f-card-top">
+            <span><img src="./assets/icons/ticket.png" alt="ticket" /></span>
+            <span class="eco">Economy</span>
+          </div>
+          <div class="f-card-data1">
+            <span>Delhi (DEL) - Dubai (DXB)</span>
+          </div>
+          <div class="f-card-line"></div>
+          <div class="f-card-data2">
+            <span>Dubai (DXB) - Delhi (DEL)</span>
+          </div>
+          <div class="f-price">
+            <span>$320</span>
+          </div>
+        </div>
+
+        <div class="flight__card">
+          <div class="f-card-top">
+            <span><img src="./assets/icons/ticket.png" alt="ticket" /></span>
+            <span class="eco">Economy</span>
+          </div>
+          <div class="f-card-data1">
+            <span>Mumbai (BOM) - Singapore (SIN)</span>
+          </div>
+          <div class="f-card-line"></div>
+          <div class="f-card-data2">
+            <span>Singapore (SIN) - Mumbai (BOM)</span>
+          </div>
+          <div class="f-price">
+            <span>$410</span>
+          </div>
+        </div>
+
+        <div class="flight__card">
+          <div class="f-card-top">
+            <span><img src="./assets/icons/ticket.png" alt="ticket" /></span>
+            <span class="eco">Economy</span>
+          </div>
+          <div class="f-card-data1">
+            <span>Tokyo (NRT) - Seoul (ICN)</span>
+          </div>
+          <div class="f-card-line"></div>
+          <div class="f-card-data2">
+            <span>Seoul (ICN) - Tokyo (NRT)</span>
+          </div>
+          <div class="f-price">
+            <span>$280</span>
+          </div>
+        </div>
+
+        <div class="flight__card">
+          <div class="f-card-top">
+            <span><img src="./assets/icons/ticket.png" alt="ticket" /></span>
+            <span class="eco">Economy</span>
+          </div>
+          <div class="f-card-data1">
+            <span>Sydney (SYD) - Melbourne (MEL)</span>
+          </div>
+          <div class="f-card-line"></div>
+          <div class="f-card-data2">
+            <span>Melbourne (MEL) - Sydney (SYD)</span>
+          </div>
+          <div class="f-price">
+            <span>$190</span>
+          </div>
+        </div>
+
+        <div class="flight__card">
+          <div class="f-card-top">
+            <span><img src="./assets/icons/ticket.png" alt="ticket" /></span>
+            <span class="eco">Economy</span>
+          </div>
+          <div class="f-card-data1">
+            <span>Paris (CDG) - Rome (FCO)</span>
+          </div>
+          <div class="f-card-line"></div>
+          <div class="f-card-data2">
+            <span>Rome (FCO) - Paris (CDG)</span>
+          </div>
+          <div class="f-price">
+            <span>$240</span>
+          </div>
+        </div>
+
+        <div class="flight__card">
+          <div class="f-card-top">
+            <span><img src="./assets/icons/ticket.png" alt="ticket" /></span>
+            <span class="eco">Economy</span>
+          </div>
+          <div class="f-card-data1">
+            <span>Hyderabad (HYD) - Dubai (DXB)</span>
+          </div>
+          <div class="f-card-line"></div>
+          <div class="f-card-data2">
+            <span>Dubai (DXB) - Hyderabad (HYD)</span>
+          </div>
+          <div class="f-price">
+            <span>$400</span>
+          </div>
+        </div>
+
+        <div class="flight__card">
+          <div class="f-card-top">
+            <span><img src="./assets/icons/ticket.png" alt="ticket" /></span>
+            <span class="eco">Economy</span>
+          </div>
+          <div class="f-card-data1">
+            <span>Bangalore (BLR) - Kochi (COK)</span>
+          </div>
+          <div class="f-card-line"></div>
+          <div class="f-card-data2">
+            <span>Kochi (COK) - Bangalore (BLR)</span>
+          </div>
+          <div class="f-price">
+            <span>$120</span>
+          </div>
+        </div>
       </section>
 
       <!-- ===================== Places Section ===================== -->
       <h1 id="places">Uncover the World's Best Destinations</h1>
       <section class="places-section">
-        <iframe src="./pages/destinations.html" frameborder="0" class="frame" loading="lazy"></iframe>
+        <div class="places__slide">
+          <div class="places__card">
+            <img src="../assets/places/bali.jpg" alt="bali" />
+            <span class="places__details">Bali</span>
+          </div>
+
+          <div class="places__card">
+            <img src="../assets/places/barcelona.jpg" alt="barcelona" />
+            <span class="places__details">Barcelona</span>
+          </div>
+
+          <div class="places__card">
+            <img src="../assets/places/dubai.jpg" alt="dubai" />
+            <span class="places__details">Dubai</span>
+          </div>
+
+          <div class="places__card">
+            <img src="../assets/places/india.jpg" alt="india" />
+            <span class="places__details">India</span>
+          </div>
+
+          <div class="places__card">
+            <img src="../assets/places/london.jpg" alt="london" />
+            <span class="places__details">London</span>
+          </div>
+
+          <div class="places__card">
+            <img src="../assets/places/newyork.jpg" alt="newyork" />
+            <span class="places__details">New York</span>
+          </div>
+
+          <div class="places__card">
+            <img src="../assets/places/tokyo.jpg" alt="tokyo" />
+            <span class="places__details">Tokyo</span>
+          </div>
+
+          <div class="places__card">
+            <img src="../assets/places/paris.jpg" alt="paris" />
+            <span class="places__details">Paris</span>
+          </div>
+
+          <div class="places__card">
+            <img src="../assets/places/rome.jpg" alt="rome" />
+            <span class="places__details">Rome</span>
+          </div>
+
+          <!-- duplicate cards -->
+
+          <div class="places__card">
+            <img src="../assets/places/bali.jpg" alt="bali" />
+            <span class="places__details">Bali</span>
+          </div>
+
+          <div class="places__card">
+            <img src="../assets/places/barcelona.jpg" alt="barcelona" />
+            <span class="places__details">Barcelona</span>
+          </div>
+
+          <div class="places__card">
+            <img src="../assets/places/dubai.jpg" alt="dubai" />
+            <span class="places__details">Dubai</span>
+          </div>
+
+          <div class="places__card">
+            <img src="../assets/places/india.jpg" alt="india" />
+            <span class="places__details">India</span>
+          </div>
+
+          <div class="places__card">
+            <img src="../assets/places/london.jpg" alt="london" />
+            <span class="places__details">London</span>
+          </div>
+
+          <div class="places__card">
+            <img src="../assets/places/newyork.jpg" alt="newyork" />
+            <span class="places__details">New York</span>
+          </div>
+
+          <div class="places__card">
+            <img src="../assets/places/tokyo.jpg" alt="tokyo" />
+            <span class="places__details">Tokyo</span>
+          </div>
+
+          <div class="places__card">
+            <img src="../assets/places/paris.jpg" alt="paris" />
+            <span class="places__details">Paris</span>
+          </div>
+
+          <div class="places__card">
+            <img src="../assets/places/rome.jpg" alt="rome" />
+            <span class="places__details">Rome</span>
+          </div>
+        </div>
       </section>
 
       <!-- ===================== Testimonials Section ===================== -->
       <h1>Trusted by Travelers Worldwide</h1>
       <section class="testimonial-section">
-        <iframe src="./pages/testimonial.html" frameborder="0" class="frame" loading="lazy"></iframe>
+        <div class="testimonial__card">
+          <div class="icon1 icon">
+            <img src="../assets/icons/pin.png" alt="quote" />
+          </div>
+          <div class="icon2 icon">
+            <span>4.7</span> <img src="../assets/icons/star.png" alt="rating" />
+          </div>
+          <div class="comment">
+            "AtlasWay made my travel planning effortless. The deals are unbeatable!"
+          </div>
+          <hr />
+          <div class="user"><img src="../assets/users/user1.jpg" alt="user"></div>
+          <div class="user__name">Paul</div>
+        </div>
+
+        <div class="testimonial__card">
+          <div class="icon1 icon">
+            <img src="../assets/icons/pin.png" alt="quote" />
+          </div>
+          <div class="icon2 icon">
+            <span>4.5</span> <img src="../assets/icons/star.png" alt="rating" />
+          </div>
+          <div class="comment">
+            "The best platform for comparing flights and hotels. Highly recommended!"
+          </div>
+          <hr />
+          <div class="user"><img src="../assets/users/user2.jpg" alt="user"></div>
+          <div class="user__name">Emilia</div>
+        </div>
+
+        <div class="testimonial__card">
+          <div class="icon1 icon">
+            <img src="../assets/icons/pin.png" alt="quote" />
+          </div>
+          <div class="icon2 icon">
+            <span>4.9</span> <img src="../assets/icons/star.png" alt="rating" />
+          </div>
+          <div class="comment">
+            "I found the perfect stay with AtlasWay. Beautiful place and great price!"
+          </div>
+          <hr />
+          <div class="user"><img src="../assets/users/user4.jpg" alt="user"></div>
+          <div class="user__name">Kalyan</div>
+        </div>
+
+        <div class="testimonial__card">
+          <div class="icon1 icon">
+            <img src="../assets/icons/pin.png" alt="quote" />
+          </div>
+          <div class="icon2 icon">
+            <span>4.8</span> <img src="../assets/icons/star.png" alt="rating" />
+          </div>
+          <div class="comment">
+            "Booking was quick, easy, and secure. I'll definitely use it again!"
+          </div>
+          <hr />
+          <div class="user"><img src="../assets/users/user3.jpg" alt="user"></div>
+          <div class="user__name">Anjali</div>
+        </div>
       </section>
 
       <!-- ===================== Footer Section ===================== -->
@@ -162,7 +589,9 @@
                 height="50"
                 loading="lazy"
               />
-              <a href="./index.html"><span class="logo__text">AtlasWay</span></a>
+              <a href="./index.html"
+                ><span class="logo__text">AtlasWay</span></a
+              >
             </div>
             <div class="news">
               <p>
@@ -208,14 +637,29 @@
             <span>Privacy Policy</span>
           </div>
           <div class="social__links">
-            <span><img src="./assets/icons/x.png" loading="lazy" alt="x" /></span>
-            <span><img src="./assets/icons/insta.png" loading="lazy" alt="insta" /></span>
             <span
-              ><img src="./assets/icons/facebook.png" loading="lazy" alt="facebook"
+              ><img src="./assets/icons/x.png" loading="lazy" alt="x"
             /></span>
-            <span><img src="./assets/icons/youtube.png" loading="lazy" alt="youtube" /></span>
             <span
-              ><img src="./assets/icons/pinterest.png" loading="lazy" alt="pinterest"
+              ><img src="./assets/icons/insta.png" loading="lazy" alt="insta"
+            /></span>
+            <span
+              ><img
+                src="./assets/icons/facebook.png"
+                loading="lazy"
+                alt="facebook"
+            /></span>
+            <span
+              ><img
+                src="./assets/icons/youtube.png"
+                loading="lazy"
+                alt="youtube"
+            /></span>
+            <span
+              ><img
+                src="./assets/icons/pinterest.png"
+                loading="lazy"
+                alt="pinterest"
             /></span>
           </div>
         </div>

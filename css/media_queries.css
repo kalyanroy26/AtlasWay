@@ -1,60 +1,353 @@
 /* Extra Small (XS) */
 @media (max-width: 480px) {
-    /* Your CSS here */
+  html {
+    font-size: 12px;
+  }
+
+  .preloader img {
+    height: 200px;
+  }
+
+  .container {
+    text-align: center;
+    gap: 2rem;
+  }
+
+  h1 {
+    width: 90%;
+  }
+
+  .navbar {
+    width: 90%;
+  }
+
+  .nav__list {
+    display: none;
+  }
+
+  .burger-menu {
+    display: block;
+  }
+
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  .tagline span {
+    font-size: 2rem;
+  }
+
+  .search__menu {
+    justify-content: space-around;
+    padding: 0 1rem;
+    gap: 1rem;
+    overflow: auto;
+  }
+
+  .search__menu img {
+    height: 24px;
+  }
+
+  .stay__search{
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  #search{
+    width: 80%;
+  }
+
+  .frame {
+    height: 57vh;
+    padding: 1.5rem 0 0 0;
+  }
+
+  .field-container {
+    flex-direction: column;
+    height: auto;
+    min-height: 50vh;
+    gap: 1rem;
+  }
+
+  .field {
+    width: 80%;
+  }
+
+  .hero {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain 300px auto;
+  }
+
+  .hero-section {
+    min-height: 50vh;
+    width: 90%;
+  }
+
+  .hero-section p {
+    font-size: 2rem;
+    top: 5%;
+  }
+
+  .feature-section {
+    width: 90%;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .feature__card {
+    width: 100%;
+  }
+
+  .stay-section {
+    min-height: auto;
+    font-size: 1.1rem;
+    width: 90%;
+  }
+
+  .stay__card img {
+    height: auto;
+    max-height: 50vh;
+    object-fit: cover;
+  }
+
+  .flight__card:nth-child(even) {
+    display: none;
+  }
+
+  .places-section {
+    min-height: auto;
+    width: 90%;
+  }
+
+  .places__card img {
+    height: auto;
+    max-height: 40vh;
+  }
+
+  .testimonial-section {
+    flex-wrap: wrap;
+    width: 90%;
+  }
+
+  .testimonial__card {
+    width: 95%;
+    height: 40vh;
+  }
+
+  .comment {
+    text-wrap: balance;
+    font-size: 1.3rem;
+    line-height: 1.5;
+  }
+
+  .footer-section {
+    display: none;
+    width: 90%;
+  }
 }
 
 /* Small (SM) */
 @media (min-width: 481px) and (max-width: 768px) {
-    /* Your CSS here */
+  html {
+    font-size: 12px;
+  }
+
+  .preloader img {
+    height: 200px;
+  }
+
+  .container {
+    text-align: center;
+    gap: 2rem;
+  }
+
+  h1 {
+    width: 90%;
+  }
+
+  .navbar {
+    width: 90%;
+  }
+
+  .nav__list {
+    display: none;
+  }
+
+  .burger-menu {
+    display: block;
+  }
+
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  .tagline span {
+    font-size: 2rem;
+  }
+
+  .search__menu {
+    justify-content: space-around;
+    padding: 0 1rem;
+    gap: 1rem;
+    overflow: auto;
+  }
+
+  .search__menu img {
+    height: 24px;
+  }
+
+  .frame {
+    height: 57vh;
+    padding: 1.5rem 0 0 0;
+  }
+
+  .field-container {
+    flex-direction: column;
+    height: auto;
+    min-height: 50vh;
+    gap: 1rem;
+  }
+
+  .field {
+    width: 50%;
+  }
+
+  .hero {
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .hero-section {
+    height: auto;
+    min-height: 75vh;
+    width: 90%;
+  }
+
+  .hero-section p {
+    font-size: 3rem;
+    top: 5%;
+  }
+
+  .feature-section {
+    width: 90%;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .feature__card {
+    width: 100%;
+  }
+
+  .stay-section {
+    height: auto;
+    min-height: 80vh;
+  }
+
+  .stay__card img {
+    height: auto;
+    max-height: 80vh;
+    object-fit: cover;
+  }
+
+  .flight__card:nth-child(even) {
+    display: none;
+  }
+
+  .testimonial-section {
+    flex-wrap: wrap;
+    width: 90%;
+  }
+
+  .testimonial__card {
+    width: auto;
+    max-width: 48%;
+    height: 40vh;
+  }
+
+  .places-section {
+    height: auto;
+    min-height: 80vh;
+  }
+
+  .places__card img {
+    height: auto;
+    max-height: 80vh;
+    object-fit: cover;
+  }
+
+  .comment {
+    text-wrap: balance;
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+
+  .footer-section {
+    display: none;
+    width: 90%;
+  }
 }
 
 /* Medium (MD) */
 @media (min-width: 769px) and (max-width: 1024px) {
+  html {
+    font-size: 12px;
+  }
 
-    html{
-        font-size: 12px;
-    }
+  .preloader img {
+    height: 200px;
+  }
 
-    .preloader img{
-        height: 200px;
-    }
+  .search__menu {
+    justify-content: space-around;
+    padding: 0 1rem;
+    gap: 1rem;
+    overflow: auto;
+  }
 
-    .field-container{
-        flex-wrap: wrap;
-        gap: 1rem;
-    }
+  .search__menu img {
+    height: 24px;
+  }
 
-    .field{
-        width: 33%;
-    }
+  .frame {
+    padding: 1.5rem 0 0 0;
+  }
 
-    .hero{
-        background-position: center;
-    }
+  .hero {
+    background-position: center;
+  }
 
-    .hero p{
-        text-wrap: wrap;
-    }
+  .hero p {
+    text-wrap: wrap;
+  }
 
-    .features{
-        min-height: 30vh;
-        flex-wrap: wrap;
-        gap: 2rem;
-    }
+  .features {
+    min-height: 30vh;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
 
-    .feature__card{
-        width: 45%;
-    }
+  .feature__card {
+    width: 45%;
+  }
 
+  .testimonial__card {
+    width: auto;
+    max-width: 300px;
+    height: 40vh;
+  }
 
-
-    
-
-
-
+  .comment {
+    text-wrap: balance;
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
 }
 
-/* Large (LG) */
-@media (min-width: 1025px) and (max-width: 1440px) {
-    /* Your CSS here */
+
+@media (max-width: 768px) {
+  .login__form {
+    width: 90%;
+  }
 }

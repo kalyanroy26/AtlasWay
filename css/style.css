@@ -98,7 +98,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  height: 60px;
+  height: 65px;
   width: 85%;
   border-bottom: 1px solid var(--border-color);
 }
@@ -117,7 +117,7 @@ a {
 
 .logo__text {
   font-family: var(--logo-font);
-  font-size: 2.3rem;
+  font-size: 2.2rem;
   font-weight: 900;
   color: var(--primary-color);
 }
@@ -126,10 +126,63 @@ a {
   display: flex;
   column-gap: 3rem;
   align-items: center;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 500;
   color: var(--text-color);
   height: inherit;
+}
+
+.burger-menu {
+  display: none;
+}
+
+.nav__list__sm {
+  display: none;
+  height: 100vh;
+  width: 85%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: var(--bg-color);
+  border: 1px solid var(--border-color);
+  z-index: 999;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-right: 2rem;
+  justify-content: flex-start;
+  padding-top: 4rem;
+  gap: 4rem;
+}
+
+#menu:checked ~ .nav__list__sm {
+  display: flex;
+}
+
+.exit__icon {
+  display: none;
+  position: absolute;
+  top: 4rem;
+  left: 2rem;
+  height: 34px;
+  cursor: pointer;
+}
+
+#menu:checked ~ .nav__list__sm .exit__icon {
+  display: block;
+}
+
+.nav__list__sm span {
+  display: block;
+  font-size: clamp(1.5rem, 5vw, 2rem);
+  font-weight: 600;
+}
+
+#sm__btn {
+  order: -1;
+}
+
+.menu__icon {
+  height: 34px;
 }
 
 .nav__link a {
@@ -186,7 +239,7 @@ a {
   color: var(--primary-color);
 }
 
-.section {
+.hero-section {
   min-height: 100vh;
   width: 85%;
 }
@@ -203,8 +256,9 @@ a {
 }
 
 .login__form {
-  height: 75vh;
-  width: 30vw;
+  height: auto;
+  min-height: 80vh;
+  width: clamp(300px, 50%, 400px);
   border-radius: 8px;
   display: flex;
   flex-direction: column;
@@ -215,10 +269,10 @@ a {
   box-shadow: var(--card-shadow);
 }
 
-.login__title{
-    font-size: 2rem;
-    font-weight: 700;
-    color: var(--text-color);
+.login__title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-color);
 }
 
 .form {
@@ -240,21 +294,17 @@ a {
   height: 24px;
 }
 
-.login__field input {
-  border: none;
-  padding: 5px;
-  margin-left: 1rem;
-}
-
 .login__field {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0 1rem;
   font-size: 1.2rem;
-  width: 80%;
-  padding: 10px;
-  border-radius: 10px;
-  outline: none;
   border: 1.5px solid lightgrey;
+  border-radius: 10px;
   transition: all 0.3s ease-in-out;
 }
+
 
 .login__field:hover {
   border: 1.5px solid var(--text-color);
@@ -264,11 +314,32 @@ a {
   border: none;
 }
 
+.login__field input {
+  width: 100%;
+  height: 3.5rem;
+  padding: 0 1rem;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.input-field {
+  width: 100%;
+  height: 3.5rem;
+  padding: 0 1rem;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+
+
 .login-btn {
   border: 1px solid #252525;
   outline: none;
   width: 70%;
-  font-size: 1.5Srem;
+  font-size: 1.5rem;
   border-radius: 25px;
   height: 2rem;
   background-color: #fff;
