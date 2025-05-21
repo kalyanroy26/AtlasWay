@@ -139,7 +139,7 @@ a {
 .nav__list__sm {
   display: none;
   height: 100vh;
-  width: 85%;
+  width: 80%;
   position: absolute;
   top: 0;
   right: 0;
@@ -148,9 +148,8 @@ a {
   z-index: 999;
   flex-direction: column;
   align-items: flex-end;
-  padding-right: 2rem;
   justify-content: flex-start;
-  padding-top: 4rem;
+  padding-top: 2rem;
   gap: 4rem;
 }
 
@@ -161,7 +160,7 @@ a {
 .exit__icon {
   display: none;
   position: absolute;
-  top: 4rem;
+  top: 2rem;
   left: 2rem;
   height: 34px;
   cursor: pointer;
@@ -175,10 +174,8 @@ a {
   display: block;
   font-size: clamp(1.5rem, 5vw, 2rem);
   font-weight: 600;
-}
+  padding-right: 2rem;
 
-#sm__btn {
-  order: -1;
 }
 
 .menu__icon {
