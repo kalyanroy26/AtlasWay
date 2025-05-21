@@ -47,9 +47,11 @@
   border-radius: 12px;
   display: flex;
   flex-direction: column;
+  cursor: pointer;
   align-items: center;
   row-gap: 1rem;
   padding: 1rem;
+  transition: all .3s ease-in-out;
   box-shadow: var(--card-shadow);
   animation: pop 1s ease-in-out forwards;
   animation-timeline: view();
